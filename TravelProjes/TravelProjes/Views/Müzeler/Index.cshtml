@@ -1,0 +1,40 @@
+﻿@using TravelProjes.Models.Siniflar;
+@model List<Müzeler>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+
+
+}
+
+<div class="content" style="background-color:antiquewhite; height:100%">
+    <div class="">
+        <div class="about">
+
+            @foreach (var x in Model)
+            {
+
+
+                <h3 style="text-align: center; line-height: 0.5rem;">
+
+                    @x.Ad
+                    <hr style="line-height:1rem" />
+                </h3>
+
+                <img src="@x.FotoUrl" alt="" style="width:60%; margin-left:20%; line-height:1rem" />
+
+
+                <h5 style="text-align:center;  line-height:1rem;">Adres:</h5> <p style="text-align:center; font-size:medium; line-height:0.5rem;"> @x.Adres</p>
+                <h5 style="text-align: center; line-height:1.5rem; ">Fiyat</h5>
+                <h6 style="text-align: center; line-height:0.5rem; margin-bottom:50px;">@x.Fiyatlar $</h6>
+
+
+
+
+            }
+
+
+        </div>
+    </div>
+</div>
+

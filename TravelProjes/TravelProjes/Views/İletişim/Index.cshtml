@@ -1,0 +1,30 @@
+﻿@using TravelProjes.Models.Siniflar;
+@model List<İletişim>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<h3 style="text-align:center; font-size:xx-large; margin:30px;">İletişim</h3>
+<table style="width: 100%; border-collapse: collapse; background-color: antiquewhite; margin-bottom:40%;">
+    @foreach (var x in Model)
+    {
+
+
+        <tr style="background-color: #f0c4a3; color: #333;">
+            <th style="padding: 10px; border: 1px solid #ccc;"><b>Firma</b></th>
+            <th style="padding: 10px; border: 1px solid #ccc;"><b>Adres</b></th>
+            <th style="padding: 10px; border: 1px solid #ccc;"><b>Mail</b></th>
+            <th style="padding: 10px; border: 1px solid #ccc;"><b>İletişim</b></th>
+
+        </tr>
+        <tr style="background-color: #f9f9f9;">
+            <td style="padding: 10px; border: 1px solid #ccc;">@x.AdSoyad</td>
+            <td style="padding: 10px; border: 1px solid #ccc;">@x.Mesaj</td>
+            <td style="padding: 10px; border: 1px solid #ccc;">@x.Mail</td>
+            <td style="padding: 10px; border: 1px solid #ccc;">@x.Konu</td>
+
+        </tr>
+       
+    }
+</table>
