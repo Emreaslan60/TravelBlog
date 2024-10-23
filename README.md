@@ -8,4 +8,4 @@
 ![Ekran görüntüsü 2024-10-23 171428](http
 ![Ekran görüntüsü 2024-10-23 171648](https:
 ![yorum](https://github.com/user-attachments/assets/aa8c82c2-005a-4d05-91aa-a0009bdea4d6)
-//github.com/user-attachments/assets/fc933e0d-ec35-4dd1-bde3-4fb28475dbd1)
+
